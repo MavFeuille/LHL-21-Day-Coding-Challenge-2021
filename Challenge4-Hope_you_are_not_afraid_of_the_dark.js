@@ -1,5 +1,10 @@
-const switchToggle = (toggle) => {
-  // Code here!
-return !Objects.key(toggle.isOn) ? true : false;
-  // Remember to return a value!
+let toggle = {
+  name: "toggleA",
+  isOn: false
 }
+
+const switchToggle = (toggle) => {
+ 
+}
+
+console.log(switchToggle(toggle));
