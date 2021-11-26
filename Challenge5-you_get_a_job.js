@@ -1,0 +1,3 @@
+const addJobToAstronaut = (astronaut, job) => {
+  
+}
