@@ -9,7 +9,5 @@ const astronaut = {
 
 const addAstronautToRoster = (roster, astronaut) => {
   roster.push(astronaut);
-  console.log(roster);
+  return roster;
 }
-
-addAstronautToRoster(roster, astronaut);
