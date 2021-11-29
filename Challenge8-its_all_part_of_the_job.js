@@ -8,3 +8,6 @@ const roster = [
   }
 ]
 
+const countActiveAstronauts = (roster) => {
+  return roster.length;
+}
