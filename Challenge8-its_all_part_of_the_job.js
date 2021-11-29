@@ -1,4 +1,4 @@
-const exampleRoster = [
+const Roster = [
   {
     firstName:"Chris",
     lastName: "Hadfield",
