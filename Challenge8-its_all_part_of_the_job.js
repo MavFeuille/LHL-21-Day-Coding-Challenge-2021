@@ -1,4 +1,4 @@
-const Roster = [
+const roster = [
   {
     firstName:"Chris",
     lastName: "Hadfield",
@@ -7,3 +7,4 @@ const Roster = [
     job:"Shuttle DJ"
   }
 ]
+
