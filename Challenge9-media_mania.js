@@ -15,5 +15,3 @@ const listAstronautJobs = (roster) => {
   }
   return output
 }
-
-listAstronautJobs(roster)
