@@ -20,7 +20,6 @@ const averageWindSpeed = (weatherEntries) => {
   for (entry of weatherEntries) {
     sum += entry['windSpeed'];
   }
-  // console.log("sum: ", sum);
   average = Math.round(sum / weatherEntries.length);
   console.log("average: ", average);
   return average;
