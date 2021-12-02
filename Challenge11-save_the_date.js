@@ -23,7 +23,6 @@ const bookFreePlatform = (platformList, missionDate) => {
     }
   }
   return platformList;
-  // console.log("platformList: ", platformList);
 }
 
 bookFreePlatform(platformList, missionDate)
