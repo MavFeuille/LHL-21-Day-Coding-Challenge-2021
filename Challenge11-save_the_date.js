@@ -15,7 +15,6 @@ const platformList = [
 ] 
 
 const bookFreePlatform = (platformList, missionDate) => {
-
   for (const obj of platformList) {
     if (!obj.bookDate) {
       obj.bookDate = missionDate;
