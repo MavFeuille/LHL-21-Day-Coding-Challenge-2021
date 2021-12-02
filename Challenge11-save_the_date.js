@@ -14,3 +14,22 @@ const platformList = [
   },
 ] 
 
+const bookFreePlatform = (platformList, missionDate) => {
+  // for (const obj in platformList) {
+  //   if (!platformList[obj].bookDate) {
+  //     platformList[obj].bookDate = missionDate;
+  //     break;
+  //   }
+    
+  // }
+  for (const obj of platformList) {
+    if (!obj.bookDate) {
+      obj.bookDate = missionDate;
+      break;
+    }
+  }
+  // return platformList;
+  console.log("platformList: ", platformList);
+}
+
+bookFreePlatform(platformList, missionDate)
