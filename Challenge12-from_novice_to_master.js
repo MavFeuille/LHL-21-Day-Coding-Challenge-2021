@@ -4,6 +4,6 @@ const messages = [
 ]
 
 const parseTranscripts = (messages) => {
-  return messages.map((message) => `${message['origin']} : ${message['message']}`);
+  return messages.map((message) => `${message['origin']}: ${message['message']}`);
 }
 console.log(parseTranscripts(messages))
