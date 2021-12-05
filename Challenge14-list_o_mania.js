@@ -15,8 +15,6 @@ const switchAllTogglesOn = (toggleList) => {
       toggleItem.isOn = true;
     }
   })
-
-  // console.log("toggleList: ", toggleList)
   return toggleList;
 }
     
