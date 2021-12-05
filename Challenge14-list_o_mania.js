@@ -10,6 +10,14 @@ const toggleList = [
 ];
 
 const switchAllTogglesOn = (toggleList) => {
-  // Code here!
+  toggleList.forEach((toggleItem) => {
+    if (toggleItem.isOn === false) {
+      toggleItem.isOn = true;
+    }
+  })
+
+  // console.log("toggleList: ", toggleList)
+  return toggleList;
 }
     
+switchAllTogglesOn(toggleList)
