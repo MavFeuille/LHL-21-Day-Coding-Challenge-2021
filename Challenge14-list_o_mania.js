@@ -8,4 +8,8 @@ const toggleList = [
 		isOn:false
 	},
 ];
+
+const switchAllTogglesOn = (toggleList) => {
+  // Code here!
+}
     
