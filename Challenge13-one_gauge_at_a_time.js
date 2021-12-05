@@ -12,9 +12,7 @@ const gaugeList = [
 ];
 
 const checkAllGauges = (gaugeList) => {
-  allGauges = gaugeList.map((gaugeList) => gaugeList.current >= gaugeList.min && gaugeList.current <= gaugeList.max ? true : false)
-  // console.log("allGauges: ", allGauges)
-  // console.log(allGauges.every((element) => element === true))
+  allGauges = gaugeList.map((gaugeList) => gaugeList.current >= gaugeList.min && gaugeList.current <= gaugeList.max ? true : false);
   return allGauges.every((element) => element === true)
 }
 
