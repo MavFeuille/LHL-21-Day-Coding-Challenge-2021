@@ -15,11 +15,9 @@ const switchSpecificToggle = (toggleList, specificToggle) => {
     if (item.name === specificToggle) {
       if (!item.isOn) {
         item.isOn = true;
-        // console.log("toggleList: ", toggleList);
         return toggleList;
       } else {
         item.isOn = false;
-        // console.log("toggleList: ", toggleList);
         return toggleList;
       }
     }
