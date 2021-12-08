@@ -8,4 +8,8 @@ const toggleList = [
     isOn: true
   }
 ]
-const specificToggle = "toggleA"
+const specificToggle = "toggleA";
+
+const switchSpecificToggle = (toggleList, specificToggle) => {
+  // Code here!
+}
