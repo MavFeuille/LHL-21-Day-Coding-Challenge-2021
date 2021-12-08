@@ -5,7 +5,6 @@ const missionName = "Moon visit";
 const timeRemaining = (launchDate, missionName, fakeToday) => {
   const today = fakeToday || new Date() // Do not alter this line!
   
-
   const newLaunchDate = new Date(launchDate);
   const newToday = new Date (today);
   const timeRemaining = Math.abs(newLaunchDate - newToday);
@@ -16,7 +15,6 @@ const timeRemaining = (launchDate, missionName, fakeToday) => {
     daysRemaining: `${daysRemaining}`
   };
 
-  // console.log("output: ", output)
   return output;
 }
 
