@@ -8,5 +8,29 @@ const receivedData = [
 ];
 
 const organizeData = (receivedData) => {
-  
+  let astro = [];
+  let bio = [];
+  let physics = [];
+
+  for (const data of receivedData) {
+    if (data.type === "astro") {
+      astro.push(data.data);
+      // console.log(astro)
+    }
+    if (data.type === "bio") {
+      bio.push(data.data);
+      // console.log(bio);
+    }
+    if (data.type === "physics") {
+      physics.push(data.data);
+      // console.log(physics);
+    }
+  }
+
+  let outputObj = { "astro": astro, "bio": bio, "physics": physics};
+  // console.log("outputObj: ", outputObj);
+  return outputObj;
+
 }
+
+organizeData(receivedData);
