@@ -5,4 +5,8 @@ const receivedData = [
   {type: "bio", data: "OMG Tardigrades"},
   {type: "physics", data: "Material reflectivity"},
   {type: "astro", data: "Mercury is not the hottest"},
-]
+];
+
+const organizeData = (receivedData) => {
+  
+}
