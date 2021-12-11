@@ -15,19 +15,19 @@ const checks = {
   }
 }
 
-  const confirmReentryPlans = (speed, missionData, checks) => {
-  
-    if (speed <= checks.minSpeed && speed >= checks.maxSpeed) {
-      return false;
-    } else if (missionData.astro.length !== checks.dataEntries.astro) {
-      return false;
-    } else if (missionData.bio.length !== checks.dataEntries.bio) {
-      return false;
-    } else if (missionData.physics.length !== checks.dataEntries.physics) {
-      return false;
-    } else {
-      return true;
-    }
-  }
+const confirmReentryPlans = (speed, missionData, checks) => {
 
-  confirmReentryPlans(speed, missionData, checks);
+  if (speed >= checks.maxSpeed || speed <= checks.minSpeed) {
+    return false;
+  } else if (missionData.astro.length !== checks.dataEntries.astro) {
+    return false;
+  } else if (missionData.bio.length !== checks.dataEntries.bio) {
+    return false;
+  } else if (missionData.physics.length !== checks.dataEntries.physics) {
+    return false;
+  } else {
+    return true;
+  }
+}
+
+console.log(confirmReentryPlans(speed, missionData, checks));
