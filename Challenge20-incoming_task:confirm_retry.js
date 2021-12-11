@@ -1,18 +1,33 @@
-const speed = 40
-  const missionData = {
-    astro:["...","..."], 
-    bio:["..."], 
-    physics:["..."]
-  }
+const speed = 55
+const missionData = {
+  astro:["...","..."], 
+  bio:["..."], 
+  physics:["..."]
+}
 
-  const checks = {
-    maxSpeed:50,
-    minSpeed:20,
-    dataEntries:{
-      astro:3,
-      bio:1,
-      physics:1
+const checks = {
+  maxSpeed:50,
+  minSpeed:20,
+  dataEntries:{
+    astro:2,
+    bio:1,
+    physics:1
+  }
+}
+
+  const confirmReentryPlans = (speed, missionData, checks) => {
+  
+    if (speed <= checks.minSpeed && speed >= checks.maxSpeed) {
+      return false;
+    } else if (missionData.astro.length !== checks.dataEntries.astro) {
+      return false;
+    } else if (missionData.bio.length !== checks.dataEntries.bio) {
+      return false;
+    } else if (missionData.physics.length !== checks.dataEntries.physics) {
+      return false;
+    } else {
+      return true;
     }
   }
 
-  
+  confirmReentryPlans(speed, missionData, checks);
