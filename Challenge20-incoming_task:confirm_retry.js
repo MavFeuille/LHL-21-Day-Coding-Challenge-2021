@@ -16,7 +16,6 @@ const checks = {
 }
 
 const confirmReentryPlans = (speed, missionData, checks) => {
-
   if (speed >= checks.maxSpeed || speed <= checks.minSpeed) {
     return false;
   } else if (missionData.astro.length !== checks.dataEntries.astro) {
