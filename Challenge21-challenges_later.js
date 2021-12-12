@@ -9,3 +9,7 @@ const missionData = {
   bio:["..."], 
   physics:["..."]
 }
+
+const parseMissionSummary = (exchanges, missionData) => {
+  // Code here!
+}
