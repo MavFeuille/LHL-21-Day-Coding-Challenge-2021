@@ -11,15 +11,9 @@ const missionData = {
 }
 
 const parseMissionSummary = (exchanges, missionData) => {
-
   let transcriptArray = exchanges.map((item) => `${item.origin}: ${item.message}`);
-  console.log(transcriptArray);
-
   let outputObj = { transcript: transcriptArray, missionData}
-  console.log(outputObj);
-
   return outputObj;
-
 }
 
-console.log(parseMissionSummary(exchanges, missionData));
+// console.log(parseMissionSummary(exchanges, missionData));
